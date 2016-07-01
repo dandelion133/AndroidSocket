@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:id="@+id/person_chart_layout"
+  	android:background="@drawable/bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+ 	<RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+      
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/chat_back"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_btn_back"
+            android:paddingLeft="10dp"
+            android:text="会话"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/my_nickename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="chating"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+	<ScrollView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:scrollbars="vertical"
+    	android:background="#ffffff"
+    	android:id="@+id/chart_msg_scroll"
+    	android:layout_weight="10">
+    	<LinearLayout android:layout_weight="1"
+			android:id="@+id/chart_msg_panel"
+			android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"/>
+    </ScrollView>
+   <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/layout_bg1" >
+		
+        
+ 		<Button
+            android:id="@+id/chart_media_record"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chat_send_button_bg"
+            android:text="录音"
+            android:textSize="20sp" />
+ 		 <Button
+            android:id="@+id/chart_msg_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_send_button_bg"
+            android:text="发送"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/chart_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/chart_msg_send"
+            android:layout_toRightOf="@id/chart_media_record"
+            android:background="@drawable/edittext1"
+            android:singleLine="true"
+            android:textSize="18sp" />
+        
+        
+       
+    </RelativeLayout>
+</LinearLayout>

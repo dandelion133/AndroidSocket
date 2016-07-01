@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/friend_item"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+<LinearLayout
+           android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/headicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/img_select"
+            android:focusable="false" />
+		 
+       <LinearLayout
+           android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="way"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+           <TextView
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dip"
+            android:text="IP:192.168.0.1"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+     </LinearLayout>
+  </LinearLayout>
+  <LinearLayout
+           android:orientation="vertical"
+           android:layout_weight="3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+         <TextView
+            android:id="@+id/UnReadMsgCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="未读:9"
+            android:textColor="#218868" />
+
+ </LinearLayout>
+</LinearLayout>

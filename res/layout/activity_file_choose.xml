@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" 
+        >
+
+        <TableRow
+             android:gravity="center_horizontal"
+             android:background="#9BCD9B"
+            >
+
+            <Button
+                android:id="@+id/shouYe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textSize="15px" 
+               />
+
+            <Button
+                android:id="@+id/shangYe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="上层"
+                android:textSize="15px"
+                 />
+
+            <Button
+                android:id="@+id/duoXuan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="多选"
+                android:textSize="15px" 
+                />
+
+        </TableRow>    
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="当前位置："
+        android:textSize="13px"
+        tools:context=".FileChoose" 
+        android:background="#EDEDED"/>
+
+    <ListView 
+        android:id="@+id/listView"
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#C4C4C4"
+        />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ <TableRow>
+ 
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="35px"
+            android:layout_height="35px" 
+            android:padding="5px"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+             android:padding="5px" />
+      
+         <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10px" 
+            android:padding="3px"
+           />
+          <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10px" 
+            android:padding="3px"
+            />
+          
+    </TableRow>
+   
+
+</TableLayout>
